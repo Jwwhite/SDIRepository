@@ -2,12 +2,20 @@
  * Created by Jesse on 2/11/15.
  */
 
-// Declaring variable for storing my age
-var age = 21;
+// alert("The JS file is working");
 
-// A boolean variable to determine the
-// status of whether or not I am a student
-var isStudent = true;
+// Declaring an array for storing names of the muppets
+var muppetNames = ["Kermit", "Miss Piggy"];
 
-// A variable to store my name as a string
-var firstName = "Jesse";
+// Changes the indexed values
+muppetNames[1] = "Rizzo";
+muppetNames[2] = "Fozzy";
+
+// Declares a variable to use in place of a number
+var num = 1;
+
+// Displays the array index of the num variable
+console.log(muppetNames[num]);
+
+// Displays the contents of the array
+console.log(muppetNames);
