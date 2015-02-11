@@ -1,4 +1,9 @@
 /**
- * Created by Jesse on 2/9/15.
+ * Created by Jesse on 2/11/15.
  */
-alert("This is on the javaScript side")
+
+// Declaring variable for storing the year born
+var yearBorn = 1955;
+
+// Displaying the variable yearBorn to the console
+console.log(yearBorn);
