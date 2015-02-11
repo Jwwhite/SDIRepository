@@ -2,17 +2,12 @@
  * Created by Jesse on 2/11/15.
  */
 
-// Declaring variable for storing the year born
-var yearBorn = 1955;
+// Declaring variable for storing my age
+var age = 21;
 
-// Displaying a string of text to the console
-console.log("Hello World");
+// A boolean variable to determine the
+// status of whether or not I am a student
+var isStudent = true;
 
-// Displaying the variable yearBorn to the console
-console.log(yearBorn);
-
-// Using an alert to display text
-alert("Hello World");
-
-// Using an alert to display the variable yearBorn
-alert(yearBorn);
+// A variable to store my name as a string
+var firstName = "Jesse";
