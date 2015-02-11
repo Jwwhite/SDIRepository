@@ -5,5 +5,5 @@
 // Declaring variable for storing the year born
 var yearBorn = 1955;
 
-// Displaying the variable yearBorn to the console
-console.log(yearBorn);
+// Displaying a string of text to the console
+console.log("Hello World");
