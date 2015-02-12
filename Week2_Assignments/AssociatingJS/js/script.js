@@ -4,14 +4,12 @@
 
 // alert("JS is working");
 
-// Declares variables for holding portions of a phone number
-var areaCode = 407;
-var firstPart = 203;
-var secPart = 4529;
-var dash = "-";
+var width = prompt("We are calculating the area of a triangle.\nPlease enter the width.");
 
-// Declares a variable to hold the compiled phone number
-var phoneNo = String(areaCode) + dash + String(firstPart) + dash + String(secPart);
+var height = prompt("Please enter the height.");
 
-// Displays the variable phoneNo to the console
-console.log(phoneNo);
+var area = width * height;
+
+var result = "The area of the triangle is " + area + "sq feet.";
+
+alert(result);
