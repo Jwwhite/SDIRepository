@@ -2,20 +2,27 @@
  * Created by Jesse on 2/11/15.
  */
 
-// alert("The JS file is working");
+// alert("JS is working");
 
-// Declaring an array for storing names of the muppets
-var muppetNames = ["Kermit", "Miss Piggy"];
+// Sets variables for holding quiz scores
+var quiz1 = 87;
+var quiz2 = 100;
+var quiz3 = 60;
+var quiz4 = 80;
 
-// Changes the indexed values
-muppetNames[1] = "Rizzo";
-muppetNames[2] = "Fozzy";
+// Provides the average by adding all quizzes together and dividing
+// the sum by the number of quizzes
+var average = (quiz1 + quiz2 + quiz3 + quiz4)/4;
 
-// Declares a variable to use in place of a number
-var num = 1;
+// Display the average to the console
+console.log("The average grade is: " + average);
 
-// Displays the array index of the num variable
-console.log(muppetNames[num]);
+// Sets variables for storing the width and height of a triangle
+var width = 7;
+var height = 6;
 
-// Displays the contents of the array
-console.log(muppetNames);
+// Creates the variable for storing the perimeter
+var perimeter = width * 2 + height *  2;
+
+// Displays the result of the perimeter to the console
+console.log("The perimeter is: " + perimeter);
