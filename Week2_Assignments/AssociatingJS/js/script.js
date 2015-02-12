@@ -4,22 +4,14 @@
 
 // alert("JS is working");
 
-// Declares variables to store strings for concatenation
-var firstName = "Jesse";
-var lastName = "White";
+// Declares variables for holding portions of a phone number
+var areaCode = 407;
+var firstPart = 203;
+var secPart = 4529;
+var dash = "-";
 
-// Concatenates variables firstName and lastName with a space between
-var fullName = firstName + " " + lastName;
+// Declares a variable to hold the compiled phone number
+var phoneNo = String(areaCode) + dash + String(firstPart) + dash + String(secPart);
 
-// Displays the result of the variable fullName to the console
-console.log(fullName);
-
-// Declares variables to express how concatenating is not addition
-var a = "6";
-var b = "7";
-
-//  Concatenates variables a and b together
-var result = a + b;
-
-// Displays variable result to the console
-console.log(result);
+// Displays the variable phoneNo to the console
+console.log(phoneNo);
