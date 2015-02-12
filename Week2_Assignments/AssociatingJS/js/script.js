@@ -4,25 +4,11 @@
 
 // alert("JS is working");
 
-// Sets variables for holding quiz scores
-var quiz1 = 87;
-var quiz2 = 100;
-var quiz3 = 60;
-var quiz4 = 80;
+// Creates an array that contains the how many oranges are in each of the three bins
+var orangeBins = [234, 567, 883];
 
-// Provides the average by adding all quizzes together and dividing
-// the sum by the number of quizzes
-var average = (quiz1 + quiz2 + quiz3 + quiz4)/4;
+// Creates a variable that contains the sum of all three bins
+var total = orangeBins[0] + orangeBins[1] + orangeBins[2];
 
-// Display the average to the console
-console.log("The average grade is: " + average);
-
-// Sets variables for storing the width and height of a triangle
-var width = 7;
-var height = 6;
-
-// Creates the variable for storing the perimeter
-var perimeter = width * 2 + height *  2;
-
-// Displays the result of the perimeter to the console
-console.log("The perimeter is: " + perimeter);
+// Displays the variable total to the console
+console.log(total);
