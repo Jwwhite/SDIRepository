@@ -7,10 +7,10 @@
 var mileage = [];
 
 // Prompts the user to enter how long they will be on the road
-var time = prompt("How long are you going to travel?");
+var time = prompt("How long are you going to travel? (In Hours)", "e.g. 0.5");
 
 // Prompts the user to enter how fast they will be traveling
-var speed = prompt("How fast are you going to travel?");
+var speed = prompt("How fast are you going to travel? (In MPH)");
 
 // Prompts the user to enter how many miles to the gallon they get
 var gasPerMile = prompt("How many miles to the gallon does your vehicle get?");
@@ -26,7 +26,7 @@ mileage[2] = gasPerMile;
 mileage[3] = gasPrice;
 
 // Calculates the distance traveled
-var distance = mileage[0] / mileage[1];
+var distance = mileage[0] * mileage[1];
 
 // Adds the distance to the array
 mileage[4] = distance;
