@@ -4,12 +4,11 @@
 
 // alert("JS is working");
 
-var budget = 100;
-var iPhonePrice = 199.99;
-var wonLottery = true;
+var gpa = 48;
 
-if (iPhonePrice < budget || wonLottery) {
-    console.log("We can buy the phone!")
-} else {
-    console.log("No phone for you!!")
-}
+(gpa > 2.0) ? console.log("You can graduate!") : console.log("GPA too low!");
+
+age = 6;
+var book;
+
+book = (age < 10) ? "Green eggs and ham" : "The time machine";
