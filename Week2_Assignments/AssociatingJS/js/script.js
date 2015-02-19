@@ -4,10 +4,9 @@
 
 // alert("JS is working");
 
-var oldEnough = false;
+var kidHeight = 40;
+var minHeight = 48;
 
-if (oldEnough) {
-    console.log("You can ride the coaster!");
+if (kidHeight > minHeight) {
+    console.log("You can ride the coaster!")
 }
-
-console.log("What comes after");
