@@ -4,14 +4,12 @@
 
 // alert("JS is working");
 
-var kidHeight = 52;
-var minHeight = 48;
-var wParentHieght = 45;
+var budget = 300;
+var iPhonePrice = 199.99;
+var paycheck = 200;
 
-if (kidHeight > minHeight) {
-    console.log("You can ride the coaster!")
-} else if (kidHeight > wParentHieght) {
-    console.log("You can ride, but only with a parent present.")
+if (iPhonePrice < budget && paycheck > 300) {
+    console.log("We can buy the phone!")
 } else {
-    console.log("Sorry kid, you've got some growing to do first!");
+    console.log("No phone for you!!")
 }
