@@ -50,7 +50,8 @@ if (divideTip == "Y" || divideTip == "y") {                 // If divideTip equa
     alert("You each should pay $" + tip);                   // tell the user how much they should each pay
 
 } else if (divideTip == "N" || divideTip == "n") {                                // Otherwise if divideTip equals no
-    moreTip = prompt("Do you think the waiter deserves a larger tip?\n(Y or N)"); // ask if the waiter needs a bigger tip
+    moreTip = prompt("Do you think the waiter deserves a larger tip?\n" +
+    "\t\t\t\t(Y or N)");                                                          // ask if the waiter needs a bigger tip
 
     if (moreTip == "") {                                                              // if moreTip is blank
         alert("You didn't enter anything.");                                          // print this
@@ -64,9 +65,11 @@ if (divideTip == "Y" || divideTip == "y") {                 // If divideTip equa
             moreAmount = prompt("How much more would you like to give?");   // then prompt again
         }
         tip = tip + moreAmount;                                          // Adds the extra amount to the tip
-        tip.toFixed(2);                                            // set the decimal point to two
+        tip = tip.toFixed(2);                                            // set the decimal point to two
         alert("Your final tip comes to $" + tip);                        // print the final tip amount
     }
 
+
 }
 
+(tip >= 15.00) ? alert("Your tip was $" + tip + " you are a very generous person.") : alert("Your tip total is $" + tip +".");
