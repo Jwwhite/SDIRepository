@@ -4,12 +4,10 @@
 
 // alert("JS is working");
 
-var width = prompt("We are calculating the area of a triangle.\nPlease enter the width.");
+var oldEnough = false;
 
-var height = prompt("Please enter the height.");
+if (oldEnough) {
+    console.log("You can ride the coaster!");
+}
 
-var area = width * height;
-
-var result = "The area of the triangle is " + area + "sq feet.";
-
-alert(result);
+console.log("What comes after");
