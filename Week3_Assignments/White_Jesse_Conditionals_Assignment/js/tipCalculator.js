@@ -1,6 +1,6 @@
 /**
  * Created by Jesse White on 2/19/2015
- * Assignment:
+ * Assignment: Conditionals
  */
 
 // Sets up the variables for use in the program
@@ -24,8 +24,8 @@ if(amountSpent == "") {                                               // if noth
 // Calculates how much the tip should be
 tip = Number(amountSpent) * tipPercent;
 
-// Sets var tip to display only two decimal points
-tip = tip.toFixed(2);
+// Sets the variable to display as a float
+tip = parseFloat(tip);
 
 // Displays the current tip amount to the user
 console.log("The tip is currently $" + tip);
@@ -44,7 +44,7 @@ if (divideTip == "") {                                                          
 if (divideTip == "Y" || divideTip == "y") {                 // If divideTip equals yes
     peoplePresent = prompt("How many people are present?"); // prompt for how many people there are
     tip = tip / peoplePresent;                              // then divide the tip among the amount of people
-    tip = tip.toFixed(2);                                   // set the decimal point to two
+    tip = parseFloat(tip);                                  // Sets the variable to display as a float
     console.log("You each should pay $" + tip);             // tell the user how much they should each pay
 
 } else if (divideTip == "N" || divideTip == "n") {                                // Otherwise if divideTip equals no
@@ -62,13 +62,19 @@ if (divideTip == "Y" || divideTip == "y") {                 // If divideTip equa
             console.log("You didn't type anything.");                       // print this
             moreAmount = prompt("How much more would you like to give?");   // then prompt again
         }
+        tip = parseFloat(tip);                                           // Converts tip from a string to a float
+        moreAmount = parseFloat(moreAmount);                             // Converts moreAmount from a string to a float
         tip = tip + moreAmount;                                          // Adds the extra amount to the tip
-        tip = tip.toFixed(2);                                            // set the decimal point to two
-        console.log("Your final tip comes to $" + tip);                  // print the final tip amount
+        (tip >= 15.00) ? console.log("Your tip was $" + tip +
+        " you are a very generous person.") :
+            console.log("Your tip total is $" + tip +".");               // If tip is $15 or more print a different string
+
+    } else if (moreTip == "N" || moreTip == "n") {                       // If moreTip equals no
+        console.log("Your tip total is $" + tip + ".");                  // print this to the user
+    } else {
+        console.log("Your tip total is $" + tip + ".");                  // Catches the user entering a wrong string twice
     }
 
-
+} else {
+    console.log("Your tip total is $" + tip + ".");                      // Catches the user entering a wrong string twice
 }
-
-(tip >= 15.00) ? console.log("Your tip was $" + tip + " you are a very generous person.") :
-    console.log("Your tip total is $" + tip +".");
