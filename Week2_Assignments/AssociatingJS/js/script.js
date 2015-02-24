@@ -1,14 +1,21 @@
 /**
- * Created by Jesse on 2/18/15.
+ * Created by Jesse on 2/24/15.
  */
 
 // alert("JS is working");
 
-var gpa = 48;
+function outptMsg() {
+    console.log("Hello World");
+}
 
-(gpa > 2.0) ? console.log("You can graduate!") : console.log("GPA too low!");
+function calcArea() {
+    var width = 20;
+    var height = 30;
+    var area = width * height;
 
-age = 6;
-var book;
+    console.log(area);
+}
 
-book = (age < 10) ? "Green eggs and ham" : "The time machine";
+outptMsg();
+
+calcArea();
