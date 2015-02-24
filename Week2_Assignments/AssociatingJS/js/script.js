@@ -4,16 +4,12 @@
 
 // alert("JS is working");
 
-var width = 5;
+function dogYears(age) {
 
-function calcArea() {
-    var width = 20;
-    var height = 30;
-    var area = width * height;
-
-    //console.log(area);
+    var dogYears = age * 7;
+    console.log("Sparky is " + dogYears + " years old.");
 }
 
-calcArea();
-
-console.log(width);
+var age1 = 4;
+dogYears(age1);
+dogYears(5);
