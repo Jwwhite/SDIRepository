@@ -16,6 +16,6 @@ function calcArea() {
     console.log(area);
 }
 
-outptMsg();
-
+calcArea();
+calcArea();
 calcArea();
