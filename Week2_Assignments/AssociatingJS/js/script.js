@@ -4,12 +4,12 @@
 
 // alert("JS is working");
 
-function calcArea(width, height) {
+var one = prompt("Number one:");
+var two = prompt("Number two:");
+
+var calcArea = function(width, height) {
     var area = width * height;
     return area;
 }
 
-function calcArea(width, height) {
-    var area = width * height;
-    console.log(area);
-}
+console.log(calcArea(one, two));
