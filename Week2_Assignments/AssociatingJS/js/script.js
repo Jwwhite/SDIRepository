@@ -4,12 +4,9 @@
 
 // alert("JS is working");
 
-var one = prompt("Number one:");
-var two = prompt("Number two:");
+var b = 50;
 
-var calcArea = function(width, height) {
-    var area = width * height;
-    return area;
+while (b > 0) {
+    console.log(b + " Kegs on the wall.");
+    b--;
 }
-
-console.log(calcArea(one, two));
