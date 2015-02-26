@@ -4,12 +4,12 @@
  */
 
 // Sets up the variables
-var validation;
-var lottoNumbers;
-var florida = 1;
-var floridaNo = 53;
-var powerball = 1;
-var powerballNo = 59;
+var validation;       // for storing the value from function validate
+var lottoNumbers;     // for storing the generated array of numbers
+var florida = 1;      // holds the counting value
+var floridaNo = 53;   // holds the value to be counted up to
+var powerball = 1;    // holds the counting value
+var powerballNo = 59; // holds the value to be counted up to
 var userInput = prompt("What lottery numbers would you like? " +
     "The Florida lottery or the Powerball?\n\n\t\t\t(Type \"F\"" +
     " for Florida or \"P\" for the Powerball.)");
@@ -30,16 +30,20 @@ function validate(userIn) {
     // else if the user input equals P or p
     } else if (userIn == "P" || userIn == "p") {
         return "P"; // return an uppercase P
+    } else {
+        // Prevents the user from breaking the program
+        return console.log("What you have entered is invalid.");
     }
 
 }
 
+// for generating the lottery numbers
 function numberGen(lottoType, numbersToGen) {
-    var select;
-    var noStore;
-    var i = 0;
-    var noList = [];
-    var lottoNo = [];
+    var select;       // holds the value of the index to be selected
+    var noStore;      // holds the number to store in the array
+    var i = 0;        // int counting variable
+    var noList = [];  // holds the numbers from min to max
+    var lottoNo = []; // holds the random lottery numbers selected
 
     // while the lottery type is less than or equal to how many numbers to generate
     while (lottoType <= numbersToGen) {
@@ -51,11 +55,11 @@ function numberGen(lottoType, numbersToGen) {
 
     // var i equals 0, while i is less than or equals 5, add one to i
     for (i = 0; i <= 5; i++) {
-        select = Math.floor(Math.random() * (lottoType - 1)); // select a number randomly from one to the max for the lottery
+        select = Math.floor(Math.random() * lottoType); // select a number randomly from one to the max for the lottery
         noStore = noList[select]; // uses the random number from above and selects a number from the array
         noList.splice(select, 1); // removes the number selected
-        while (noStore === undefined) {                            // if the number selected equals undefined
-            select = Math.floor(Math.random() * (lottoType - 1));  // repeat the selection process
+        while (noStore === undefined) {                      // if the number selected equals undefined
+            select = Math.floor(Math.random() * lottoType);  // repeat the selection process
             noStore = noList[select];
 
         }
@@ -85,8 +89,18 @@ if (validation == "F") {
         lottoNumbers = numberGen(powerball, powerballNo);
     }
 
+} else {
+    // Prevents the user from breaking the program
+    console.log("Please run the program again");
 }
+
+// catches user error and only displays the console log if they have selected one of the two options
+if (validation == "F" || validation == "P") {
 // print the result to the user
-console.log("Your lottery Numbers are " + lottoNumbers[0] + "-" + lottoNumbers[1]
+    console.log("Your lottery Numbers are " + lottoNumbers[0] + "-" + lottoNumbers[1]
     + "-" + lottoNumbers[2] + "-" + lottoNumbers[3] + "-" + lottoNumbers[4] + "-"
     + lottoNumbers[5] + ".");
+} else {
+    // Prevents the user from breaking the program
+    console.log("and enter one of the listed options.")
+}
